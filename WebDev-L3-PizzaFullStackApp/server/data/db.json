@@ -1,0 +1,368 @@
+{
+  "users": [
+    {
+      "_id": "f5d3b5e9f9b060bab9fed476",
+      "name": "Pizzaro Admin",
+      "email": "admin@pizzaro.local",
+      "passwordHash": "$2a$12$vu997xe.jOp/xZxlJ/JjLOA9pBWpmRTJYM0LW2MhBTEtCRw6i2YIK",
+      "role": "admin",
+      "emailVerified": true,
+      "createdAt": "2026-09-22T23:28:15.553Z",
+      "updatedAt": "2026-09-22T23:28:17.866Z"
+    },
+    {
+      "_id": "80b987874f94d7154949402d",
+      "name": "Luigi Mario",
+      "email": "testcustomer@pizzaro.local",
+      "passwordHash": "$2a$12$ZSxsPUUraAT4HfvvG2fcOO2KrQdeQDzwxTIC4MBu1mm7r415v0ipS",
+      "role": "user",
+      "emailVerified": true,
+      "createdAt": "2026-09-22T23:29:51.181Z",
+      "updatedAt": "2026-09-22T23:29:51.196Z"
+    },
+    {
+      "_id": "92d4b6a64530aa0e5dd351ea",
+      "name": "Luigi Mario",
+      "email": "customer_1790119840002@pizzaro.local",
+      "passwordHash": "$2a$12$D6WN159ThLvcB0KC3o6WOOQX1SWq06jNcYgCeSvAISTHyvcxDCPW.",
+      "role": "user",
+      "emailVerified": true,
+      "createdAt": "2026-09-22T23:30:40.278Z",
+      "updatedAt": "2026-09-22T23:30:40.290Z"
+    },
+    {
+      "_id": "b7a4b119bf83301390887910",
+      "name": "Azizpiz Admin",
+      "email": "admin@azizpiz.local",
+      "passwordHash": "$2a$12$01VXjeY.awoV15uE4eBoX.vRiTmJJjDOjfnmHU31nzBSyNIzg189C",
+      "role": "admin",
+      "emailVerified": true,
+      "createdAt": "2026-09-24T02:29:32.644Z",
+      "updatedAt": "2026-09-24T02:29:32.645Z"
+    }
+  ],
+  "inventory": [
+    {
+      "_id": "063a966813e4c66698819368",
+      "category": "base",
+      "name": "Aziz Classic Crust",
+      "price": 45,
+      "quantity": 17,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.170Z",
+      "updatedAt": "2026-09-24T02:40:16.326Z",
+      "lastLowStockAlertAt": "2026-09-24T02:26:53.830Z"
+    },
+    {
+      "_id": "7fcb995a01871449df3bae9b",
+      "category": "base",
+      "name": "Thin & Crispy",
+      "price": 50,
+      "quantity": 18,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:53.831Z",
+      "lastLowStockAlertAt": "2026-09-24T02:26:53.830Z"
+    },
+    {
+      "_id": "feaae80ddf6bae450dc170fa",
+      "category": "base",
+      "name": "Stuffed Crust",
+      "price": 70,
+      "quantity": 18,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:53.831Z",
+      "lastLowStockAlertAt": "2026-09-24T02:26:53.830Z"
+    },
+    {
+      "_id": "7d5c764df91840915b93133a",
+      "category": "base",
+      "name": "Whole Wheat",
+      "price": 55,
+      "quantity": 18,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:53.831Z",
+      "lastLowStockAlertAt": "2026-09-24T02:26:53.830Z"
+    },
+    {
+      "_id": "7dd8ee27f477fe8ccd0acc4b",
+      "category": "base",
+      "name": "Gluten Free",
+      "price": 75,
+      "quantity": 18,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:53.831Z",
+      "lastLowStockAlertAt": "2026-09-24T02:26:53.830Z"
+    },
+    {
+      "_id": "c99f9687942f82057daae941",
+      "category": "sauce",
+      "name": "Rich Tomato",
+      "price": 0,
+      "quantity": 28,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:51.171Z"
+    },
+    {
+      "_id": "a2a5b0d2c6ac3a19fabc36a8",
+      "category": "sauce",
+      "name": "Green Pesto",
+      "price": 12,
+      "quantity": 27,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:40:16.329Z"
+    },
+    {
+      "_id": "d6fd25f4c9b64d27b42fb4f5",
+      "category": "sauce",
+      "name": "Smoky BBQ",
+      "price": 10,
+      "quantity": 28,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:51.171Z"
+    },
+    {
+      "_id": "bd7d2a4c83f1709dda85de4e",
+      "category": "sauce",
+      "name": "Creamy Garlic",
+      "price": 15,
+      "quantity": 28,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:51.171Z"
+    },
+    {
+      "_id": "e9593ef1d15adb0e3d60a6f3",
+      "category": "sauce",
+      "name": "Shito Spice",
+      "price": 10,
+      "quantity": 28,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:51.171Z"
+    },
+    {
+      "_id": "3baad3e0e718b80fec3217bc",
+      "category": "cheese",
+      "name": "Mozzarella",
+      "price": 25,
+      "quantity": 19,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:40:16.332Z",
+      "lastLowStockAlertAt": "2026-09-24T02:26:53.830Z"
+    },
+    {
+      "_id": "69b7cfdd625a3589f9077bbb",
+      "category": "cheese",
+      "name": "Cheddar Blend",
+      "price": 30,
+      "quantity": 20,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:53.831Z",
+      "lastLowStockAlertAt": "2026-09-24T02:26:53.830Z"
+    },
+    {
+      "_id": "78b72680d3292a7d5eb674d5",
+      "category": "cheese",
+      "name": "Plant-Based Cheese",
+      "price": 35,
+      "quantity": 20,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:53.831Z",
+      "lastLowStockAlertAt": "2026-09-24T02:26:53.830Z"
+    },
+    {
+      "_id": "43f62fd7179149950c09bf11",
+      "category": "vegetable",
+      "name": "Green Pepper",
+      "price": 10,
+      "quantity": 32,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:40:16.334Z"
+    },
+    {
+      "_id": "b4dc301b8b3dcd2fa8fe6bcc",
+      "category": "vegetable",
+      "name": "Red Onion",
+      "price": 8,
+      "quantity": 33,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:51.171Z"
+    },
+    {
+      "_id": "012f480e392b40d6d496c2f5",
+      "category": "vegetable",
+      "name": "Mushrooms",
+      "price": 12,
+      "quantity": 33,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:51.171Z"
+    },
+    {
+      "_id": "0dd167d4967dece98b1e8189",
+      "category": "vegetable",
+      "name": "Black Olives",
+      "price": 15,
+      "quantity": 33,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:51.171Z"
+    },
+    {
+      "_id": "5d996a1143ce44c3089e362d",
+      "category": "vegetable",
+      "name": "Sweet Corn",
+      "price": 10,
+      "quantity": 33,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:51.171Z"
+    },
+    {
+      "_id": "a26fd3e7d45e78ca18157f1e",
+      "category": "vegetable",
+      "name": "Fresh Chilli",
+      "price": 8,
+      "quantity": 33,
+      "lowStockThreshold": 20,
+      "active": true,
+      "createdAt": "2026-09-24T02:26:51.171Z",
+      "updatedAt": "2026-09-24T02:26:51.171Z"
+    }
+  ],
+  "orders": [
+    {
+      "_id": "97e479aa2c876951d342e949",
+      "status": "Order Received",
+      "createdAt": "2026-09-22T23:30:40.606Z",
+      "updatedAt": "2026-09-24T02:39:55.158Z",
+      "statusHistory": [
+        {
+          "status": "Order Received"
+        },
+        {
+          "status": "In Kitchen"
+        },
+        {
+          "status": "Order Received"
+        }
+      ],
+      "customer": "92d4b6a64530aa0e5dd351ea",
+      "items": [
+        {
+          "inventory": "f3b45d385168de31223735e7",
+          "name": "Classic Hand Tossed",
+          "category": "base",
+          "quantity": 1,
+          "unitPrice": 129
+        },
+        {
+          "inventory": "f85459ea80319819f994d088",
+          "name": "Classic Tomato",
+          "category": "sauce",
+          "quantity": 1,
+          "unitPrice": 0
+        },
+        {
+          "inventory": "f520db470d6884e5e226d689",
+          "name": "Mozzarella",
+          "category": "cheese",
+          "quantity": 1,
+          "unitPrice": 55
+        },
+        {
+          "inventory": "c2222b2d1241d00151ec387f",
+          "name": "Bell Peppers",
+          "category": "vegetable",
+          "quantity": 1,
+          "unitPrice": 20
+        }
+      ],
+      "amount": 204,
+      "payment": {
+        "provider": "test",
+        "paymentId": "test_361ebfd3-4fab-4dfc-a262-c51d01010cab",
+        "paidAt": "2026-09-22T23:30:40.606Z"
+      }
+    },
+    {
+      "_id": "88013992e7e066cb5f25d0b9",
+      "status": "Order Received",
+      "createdAt": "2026-09-24T02:40:16.338Z",
+      "updatedAt": "2026-09-24T02:40:16.338Z",
+      "statusHistory": [
+        {
+          "status": "Order Received"
+        }
+      ],
+      "customer": "b7a4b119bf83301390887910",
+      "items": [
+        {
+          "inventory": "063a966813e4c66698819368",
+          "name": "Aziz Classic Crust",
+          "category": "base",
+          "quantity": 1,
+          "unitPrice": 45
+        },
+        {
+          "inventory": "a2a5b0d2c6ac3a19fabc36a8",
+          "name": "Green Pesto",
+          "category": "sauce",
+          "quantity": 1,
+          "unitPrice": 12
+        },
+        {
+          "inventory": "3baad3e0e718b80fec3217bc",
+          "name": "Mozzarella",
+          "category": "cheese",
+          "quantity": 1,
+          "unitPrice": 25
+        },
+        {
+          "inventory": "43f62fd7179149950c09bf11",
+          "name": "Green Pepper",
+          "category": "vegetable",
+          "quantity": 1,
+          "unitPrice": 10
+        }
+      ],
+      "amount": 92,
+      "payment": {
+        "provider": "test",
+        "paymentId": "test_33865332-5f68-4572-9ffa-bb12dd5a5c1f",
+        "paidAt": "2026-09-24T02:40:16.336Z"
+      }
+    }
+  ],
+  "intents": []
+}

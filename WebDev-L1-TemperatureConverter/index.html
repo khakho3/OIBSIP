@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Convert temperatures between Celsius, Fahrenheit, and Kelvin." />
+    <title>Thermo | Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="converter-shell">
+      <section class="converter-card" aria-labelledby="page-title">
+        <div class="eyebrow">Quick conversion</div>
+        <h1 id="page-title">Temperature<br /><em>converter</em></h1>
+        <p class="intro">Enter a temperature and get every scale at once.</p>
+
+        <form id="converter-form" novalidate>
+          <div class="field-group">
+            <label for="temperature">Temperature</label>
+            <div class="input-wrap">
+              <input id="temperature" name="temperature" type="number" inputmode="decimal" step="any" required placeholder="e.g. 24.5" aria-describedby="error-message" autocomplete="off" />
+              <span id="input-unit" class="input-unit" aria-hidden="true">°C</span>
+            </div>
+            <p id="error-message" class="error-message" role="alert" aria-live="polite"></p>
+          </div>
+
+          <div class="field-group">
+            <label for="unit">I am starting with</label>
+            <select id="unit" name="unit">
+              <option value="celsius">Celsius (°C)</option>
+              <option value="fahrenheit">Fahrenheit (°F)</option>
+              <option value="kelvin">Kelvin (K)</option>
+            </select>
+          </div>
+
+          <button type="submit">Convert temperature <span aria-hidden="true">→</span></button>
+        </form>
+
+        <section id="results" class="results" aria-live="polite" aria-labelledby="results-title">
+          <div class="results-heading">
+            <p id="results-title">Your conversion</p>
+            <span>All scales</span>
+          </div>
+          <div class="result-grid">
+            <article class="result-tile celsius">
+              <span class="result-label">Celsius</span>
+              <strong id="celsius-result">—</strong>
+              <span class="result-unit">°C</span>
+            </article>
+            <article class="result-tile fahrenheit">
+              <span class="result-label">Fahrenheit</span>
+              <strong id="fahrenheit-result">—</strong>
+              <span class="result-unit">°F</span>
+            </article>
+            <article class="result-tile kelvin">
+              <span class="result-label">Kelvin</span>
+              <strong id="kelvin-result">—</strong>
+              <span class="result-unit">K</span>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

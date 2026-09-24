@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in | Aziz Tech Org</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="auth-layout">
+      <section class="brand-panel" aria-label="Welcome">
+        <p class="eyebrow">AZIZ TECH ORG</p>
+        <h1>Welcome back.</h1>
+        <p>Sign in to access your private dashboard.</p>
+      </section>
+      <section class="form-panel">
+        <div class="form-card">
+          <p class="eyebrow">SECURE ACCESS</p>
+          <h2>Sign in</h2>
+          <p class="muted">Use your username or email and password.</p>
+          <form id="loginForm" novalidate>
+            <label for="identity">Username or email</label>
+            <input id="identity" name="identity" autocomplete="username" required />
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+            <p id="formMessage" class="message" role="alert" aria-live="polite"></p>
+            <button type="submit">Sign in</button>
+          </form>
+          <p class="switch-copy">New here? <a href="register.html">Create an account</a></p>
+        </div>
+      </section>
+    </main>
+    <script src="auth.js"></script>
+  </body>
+</html>

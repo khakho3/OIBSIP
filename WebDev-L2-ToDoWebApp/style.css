@@ -1,0 +1,48 @@
+:root { --ink:#23302b; --muted:#74817a; --paper:#fffdf8; --sand:#f4eee4; --line:#e6ddd0; --green:#315e4e; --mint:#dbeee4; --coral:#f07d62; --shadow:0 18px 50px rgba(46,55,46,.09); }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; background:linear-gradient(120deg,#f7f1e7 0%,#fcfaf5 52%,#e8f0e8 100%); color:var(--ink); font-family:"DM Sans",sans-serif; }
+button,input { font:inherit; }
+button { cursor:pointer; }
+.app-shell { width:min(1060px,calc(100% - 40px)); margin:0 auto; padding:76px 0 64px; }
+.hero { max-width:620px; margin-bottom:36px; }
+.eyebrow,.section-kicker { color:var(--green); font-size:.73rem; font-weight:700; letter-spacing:.13em; margin:0 0 7px; text-transform:uppercase; }
+h1,h2 { margin:0; font-family:Fraunces,serif; }
+h1 { font-size:clamp(2.7rem,7vw,4.9rem); letter-spacing:-.055em; line-height:1; }
+h1 em { color:var(--coral); font-style:italic; }
+.intro { color:var(--muted); font-size:1.08rem; margin:18px 0 0; }
+.composer { background:var(--paper); border:1px solid rgba(230,221,208,.85); border-radius:19px; box-shadow:var(--shadow); padding:10px; margin-bottom:30px; }
+#task-form { display:flex; gap:10px; }
+#task-input { background:transparent; border:0; border-radius:12px; color:var(--ink); flex:1; min-width:0; outline:none; padding:14px 16px; }
+#task-input:focus { box-shadow:inset 0 0 0 2px #b9d6c7; }
+#task-input::placeholder { color:#9da59f; }
+.add-button { align-items:center; background:var(--green); border:0; border-radius:12px; color:white; display:flex; font-weight:700; gap:7px; padding:0 20px; }
+.add-button span { font-size:1.35rem; font-weight:400; line-height:0; }
+.add-button:hover { background:#244c3e; }
+.lists-grid { display:grid; gap:28px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+.task-section { background:rgba(255,253,248,.78); border:1px solid rgba(230,221,208,.9); border-radius:20px; min-height:310px; padding:24px; }
+.section-heading { align-items:flex-start; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; padding-bottom:17px; }
+.section-kicker { color:var(--muted); font-size:.65rem; margin-bottom:4px; }
+h2 { font-size:1.75rem; letter-spacing:-.035em; }
+.count { background:var(--sand); border-radius:100px; color:#6d746d; font-size:.78rem; font-weight:700; padding:7px 10px; white-space:nowrap; }
+.completed-section .count { background:var(--mint); color:var(--green); }
+.task-list { list-style:none; margin:0; padding:7px 0 0; }
+.task { align-items:flex-start; border-bottom:1px solid var(--line); display:flex; gap:11px; padding:16px 0; }
+.task:last-child { border-bottom:0; }
+.check-button { background:white; border:1.5px solid #b9c8bd; border-radius:50%; flex:0 0 22px; height:22px; margin-top:2px; padding:0; width:22px; }
+.check-button:hover { border-color:var(--green); }
+.task.done .check-button { background:var(--green); border-color:var(--green); color:white; }
+.task.done .check-button::after { content:"✓"; font-size:.8rem; font-weight:700; }
+.task-content { flex:1; min-width:0; }
+.task-text { color:var(--ink); font-size:.97rem; line-height:1.38; overflow-wrap:anywhere; }
+.task.done .task-text { color:#718078; text-decoration:line-through; }
+.task-time { color:#98a19b; display:block; font-size:.73rem; margin-top:5px; }
+.task-actions { display:flex; gap:2px; }
+.icon-button { background:transparent; border:0; border-radius:7px; color:#7d8880; font-size:.78rem; padding:5px 6px; }
+.icon-button:hover { background:var(--sand); color:var(--ink); }
+.delete-button:hover { background:#fee8e1; color:#b44c38; }
+.edit-input { border:1px solid #a9c7b7; border-radius:7px; color:var(--ink); outline:0; padding:5px 7px; width:100%; }
+.empty-state { color:#87918a; font-size:.9rem; line-height:1.5; padding:30px 4px; text-align:center; }
+.empty-state span { color:var(--coral); display:block; font-size:1.35rem; margin-bottom:5px; }
+.sr-only { height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; clip:rect(0,0,0,0); white-space:nowrap; }
+@media (max-width:700px) { .app-shell { padding-top:48px; } .lists-grid { grid-template-columns:1fr; } .task-section { min-height:220px; } }
+@media (max-width:440px) { .app-shell { width:min(100% - 24px,1060px); } #task-form { align-items:stretch; flex-direction:column; } .add-button { justify-content:center; min-height:47px; } }
